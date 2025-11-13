@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1763035706" />
+    <testcase name="basic_count" classname="testbench" file="C:\Users\Posimsetty\Desktop\learning_coctb\z_cocotb\testbench.py" lineno="12" time="0.04515838623046875" sim_time_ns="49.001" ratio_time="1085.0919195810102" />
+  </testsuite>
+</testsuites>
