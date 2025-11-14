@@ -13,20 +13,3 @@ async def or_test(dut):
         dut.b.value = b[i]
         await Timer(1,"ns")
         assert dut.y.value == y[i] , f"Error at iteration {i}"
-
-class InputDriver(BusDriver):
-    _signams=['rdy','en','data']
-    def __init__(self,dut,name,clk):
-        BusDriver.__init__(self,dut,name,clk)
-        self.bus.en.value = 0
-        self.clk=clk
-
-    async def driver_send(self,value,sync=True):
-        if self.bus.rdy.value != 1:
-            await RisingEdge(self.bus.rdy)
-        self.bus.en =1
-        self.bus.data.value = value
-        await ReadOnly()
-        await RisingEdge(self.clk)
-        self.bus.en = 0
-            
