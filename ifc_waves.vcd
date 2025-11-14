@@ -1,0 +1,63 @@
+$date
+	Fri Nov 14 14:48:02 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ifc_or_test $end
+$var wire 1 ! CLK $end
+$var wire 1 " RST_N $end
+$var wire 1 # a_data $end
+$var wire 1 $ a_en $end
+$var wire 1 % b_data $end
+$var wire 1 & b_en $end
+$var wire 1 ' y_en $end
+$var wire 1 ( y_rdy $end
+$var wire 1 ) y_data $end
+$var wire 1 * b_rdy $end
+$var wire 1 + a_rdy $end
+$scope module dut $end
+$var wire 1 ! CLK $end
+$var wire 1 " RST_N $end
+$var wire 1 # a_data $end
+$var wire 1 $ a_en $end
+$var wire 1 % b_data $end
+$var wire 1 & b_en $end
+$var wire 1 ' y_en $end
+$var reg 1 + a_rdy $end
+$var reg 1 * b_rdy $end
+$var reg 1 , reg_a $end
+$var reg 1 - reg_b $end
+$var reg 1 . reg_y $end
+$var reg 2 / state_reg [1:0] $end
+$var reg 1 ) y_data $end
+$var reg 1 ( y_rdy $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 /
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+z'
+z&
+z%
+z$
+z#
+0"
+z!
+$end
+#10000
+1"
