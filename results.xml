@@ -1,8 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1763128082" />
-    <testcase name="ifc_or_test" classname="ifc_or_test" file="C:\Users\Posimsetty\Desktop\learning_coctb\test\ifc_or_test.py" lineno="35" time="0.11655116081237793" sim_time_ns="10.0" ratio_time="85.79923125860437">
-      <failure message="Test failed with RANDOM_SEED=1763128082" />
-    </testcase>
+    <property name="random_seed" value="1763371745" />
+    <testcase name="ifc_or_test" classname="ifc_or_test" file="C:\Users\Posimsetty\Desktop\learning_coctb\test\ifc_or_test.py" lineno="42" time="0.10573005676269531" sim_time_ns="101.001" ratio_time="955.2723519924955" />
   </testsuite>
 </testsuites>
