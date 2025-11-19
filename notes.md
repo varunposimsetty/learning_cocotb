@@ -47,8 +47,8 @@ for _ in range(5):
 ```
 
 - with_timeout() - The max time I'm willing to wait for a signal/event. Max wait time (deadline)
-``` bash await with_timeout(RisingEdge(dut.clk),100,'ns') ```
+``` await with_timeout(RisingEdge(dut.clk),100,'ns') ```
 Indicates your willing to wait for a rising_edge(clk) if it occurs within the 100 ns else it throws a 
-```bash  SimTimeoutError ```
+```SimTimeoutError ```
 
 
