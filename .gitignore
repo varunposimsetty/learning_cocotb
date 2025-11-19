@@ -1,4 +1,7 @@
-*.f
 *.vcd
-*xml
-__pychace__
+*.vcd.gz
+*_waves.vcd
+__pycache__/
+*.pyc
+sim_build/
+results.xml
