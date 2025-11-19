@@ -12,8 +12,8 @@ export PYTHONPATH := $(PWD)/test:$(PYTHONPATH)
 #	$(MAKE) sim MODULE=testbench TOPLEVEL=dut
 #include $(shell cocotb-config --makefiles)/Makefile.sim
 or: 
-	$(MAKE) sim MODULE=ifc_or_test TOPLEVEL=ifc_or_test
+	$(MAKE) sim MODULE=ifc_or_test_lecture TOPLEVEL=ifc_or_test
 include $(shell cocotb-config --makefiles)/Makefile.sim
 clean::
 	rm -rf __pycache__ test/__pycache__
-	rm -f modelsim.ini transcript *.xml
+	rm -f modelsim.ini transcript *.xml *vcd *gtkw *.vvp *pyc 

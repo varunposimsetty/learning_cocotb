@@ -36,5 +36,19 @@
     - Cross Coverage
 
 
+## Additional 
+- ReadOnly() - It is a simualtion scheduling trigger that ensures the signals are read only after all the RTL events have occured in the current timestep.
+``` bash 
+for _ in range(5):
+    await RisingEdge(dut.clk)
+    await ReadOnly()
+    count = dut.count.value.integer
+    cocotb.log.info(f"The value of count is {count}")
+```
+
+- with_timeout() - The max time I'm willing to wait for a signal/event. Max wait time (deadline)
+``` bash await with_timeout(RisingEdge(dut.clk),100,'ns') ```
+Indicates your willing to wait for a rising_edge(clk) if it occurs within the 100 ns else it throws a 
+```bash  SimTimeoutError ```
 
 
